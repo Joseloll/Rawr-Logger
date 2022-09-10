@@ -1,6 +1,8 @@
 # Rawr-Logger
 ![image](https://user-images.githubusercontent.com/106576578/189467399-8388b8c6-dfd6-428e-8182-dfe671e846cf.png)
 
+# Note
+- This Projects Was Made Very Fast So I Will Make Updates And Make It Better
 # About
 - A Dual Hooked Roblox Cookie Stub Builder With A Few Options
 
