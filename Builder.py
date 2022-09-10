@@ -1,5 +1,4 @@
 import os
-from tokenize import Name
 import requests
 from pystyle import *
 from PIL import ImageGrab
