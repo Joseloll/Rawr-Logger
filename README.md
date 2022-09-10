@@ -11,7 +11,7 @@
 - Steals Pc Host Name
 - Steals Pc User Name
 - Fork Bomber
-
+- Takes A ScreenShot Of There Desktop When They Run The File
 # To List
 - Make Where It Grabs The Roblox Cookie From More Browsers
 
