@@ -26,7 +26,7 @@
 # To List
 ✅ Make Where It Grabs The Roblox Cookie From More Browsers
 ❌ Make A Complied Version 
-❌ Added Protection To The Grabber
+❌ Addeing Protection To The Grabber
 # Credits
 Made By:
 Joseyt#1935
