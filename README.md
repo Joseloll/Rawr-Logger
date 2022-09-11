@@ -3,14 +3,11 @@
 
 
 # About
-- A Dual Hooked Roblox Cookie Stub Builder With A Few Options
+- A Dual Hooked Roblox Cookie Stub Builder With Protection
 
 # Update
-- Added More Browser Support For The Cookie Grabber Now It Grabs From Microsoft Edge, Google Chrome,Vivaldis,Opera,Brave,FireFox
-- Added Anti Http Debugger
-- Added Anti Fiddler
-- Added Anti Wire Shark
-- Added Anti Process Hacker
+- Added Protection To The Grabber
+- Added Where Its Harder To Get The Webhook If They Process Hacker OR Etc To Get The Webhook
 # Features
 - Webhook Checker
 - Steals Roblox Cookie From The Edge Browser
@@ -19,14 +16,12 @@
 - Steals Pc Host Name
 - Steals Pc User Name
 - Takes A ScreenShot Of There Desktop When They Run The File
-- Anti Http Debugger
-- Anti Wire Shark
-- Anti Process Hacker
-- Anti Fiddler
-# To List
+-  Has Protection To The Grabber
+ - Added Where Its Harder To Get The Webhook If They Process Hacker OR Etc To Get The Webhook
+
 - ✅ Make Where It Grabs The Roblox Cookie From More Browsers
 - ❌ Make A Complied Version 
-- ❌ Addeing Protection To The Grabber
+- ✅  Adding Protection To The Grabber
 # Credits
 Made By:
 Joseyt#1935
