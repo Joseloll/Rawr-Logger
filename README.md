@@ -20,7 +20,7 @@
  - Added Where Its Harder To Get The Webhook If They Process Hacker OR Etc To Get The Webhook
 
 - ✅ Make Where It Grabs The Roblox Cookie From More Browsers
-- ❌ Make A Complied Version 
+- ✅ Make A Complied Version 
 - ✅  Adding Protection To The Grabber
 # Credits
 Made By:
