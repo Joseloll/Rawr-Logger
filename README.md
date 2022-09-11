@@ -6,13 +6,19 @@
 # About
 - A Dual Hooked Roblox Cookie Stub Builder With A Few Options
 
+# Update
+- Added More Browser Support For The Cookie Grabber Now It Grabs From Microsoft Edge, Google Chrome,Vivaldis,Opera,Brave,FireFox
+- Added Anti Websnif
+- Added Anti Process Hacker
 # Features
 - Webhook Checker
 - Steals Roblox Cookie From The Edge Browser
-- Steals Ip Address
+- Steals Computers Ip Address
+- Steals Public Ip Address
 - Steals Pc Host Name
 - Steals Pc User Name
 - Takes A ScreenShot Of There Desktop When They Run The File
+- Anti Websniff
 # To List
 - Make Where It Grabs The Roblox Cookie From More Browsers
 
