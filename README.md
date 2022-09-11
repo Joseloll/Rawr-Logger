@@ -24,9 +24,9 @@
 - Anti Process Hacker
 - Anti Fiddler
 # To List
-✅ Make Where It Grabs The Roblox Cookie From More Browsers
-❌ Make A Complied Version 
-❌ Addeing Protection To The Grabber
+- ✅ Make Where It Grabs The Roblox Cookie From More Browsers
+- ❌ Make A Complied Version 
+- ❌ Addeing Protection To The Grabber
 # Credits
 Made By:
 Joseyt#1935
