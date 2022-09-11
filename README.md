@@ -8,7 +8,9 @@
 
 # Update
 - Added More Browser Support For The Cookie Grabber Now It Grabs From Microsoft Edge, Google Chrome,Vivaldis,Opera,Brave,FireFox
-- Added Anti Websnif
+- Added Anti Http Debugger
+- Added Anti Fiddler
+- Added Anti Wire Shark
 - Added Anti Process Hacker
 # Features
 - Webhook Checker
@@ -18,7 +20,10 @@
 - Steals Pc Host Name
 - Steals Pc User Name
 - Takes A ScreenShot Of There Desktop When They Run The File
-- Anti Websniff
+- Anti Http Debugger
+- Anti Wire Shark
+- Anti Process Hacker
+- Anti Fiddler
 # To List
 - Make Where It Grabs The Roblox Cookie From More Browsers
 
