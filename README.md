@@ -30,6 +30,9 @@
 ### ✅ Make Where It Grabs The Roblox Cookie From More Browsers
 ### ✅ Make A Complied Version 
 ### ✅  Adding Protection To The Grabber
+# Tutorial
+https://youtu.be/nwm29LR77Aw
+
 # Credits
 Made By:
 Joseyt#1935
