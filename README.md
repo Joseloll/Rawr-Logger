@@ -3,37 +3,30 @@
 
 
 # About
-### A Dual Hooked Roblox Cookie Stub Builder With Protection
+ A Dual Hooked Roblox Cookie Stub Builder With Protection
 
-# Update
-- Added Protection To The Grabber
-- Added Where Its Harder To Get The Webhook If They Process Hacker OR Etc To Get The Webhook
-- Added Where You Can Now Build The Dual Hooked Stub Builder
-# Features
-- Webhook Checker
-- Steals Roblox Cookie From The Edge Browser
-- Steals Computers Ip Address
-- Steals Public Ip Address
-- Steals Pc Host Name
-- Steals Pc User Name
-- Takes A ScreenShot Of There Desktop When They Run The File
--  Has Protection To The Grabber
- - Added Where Its Harder To Get The Webhook If They Process Hacker OR Etc To Get The Webhook
-# How To Use
-### Make Sure To Have Python Installed And Pip Added To Path
-### Then Run Install.bat
-### Then Run Builder.py
-### Then Fill Out Info In Builder.Py
-### Then Send File To Your Victim
 
-# To Do
-### ✅ Make Where It Grabs The Roblox Cookie From More Browsers
-### ✅ Make A Complied Version 
-### ✅  Adding Protection To The Grabber
+# Feautures
+- ✅Grabs Cookie from (edge,google chrome and firefox)
+- ✅Sends Roblox Info To Your Webhook
+- ✅Send ScreenShot Of Desktop To Your Ip
+- ✅Sends Ip Adresss To Your Webhook
+- ✅Sends Ip Adresss Info To Your Webhook
+- ✅Sends Pc Host Name Your Webhook
+- ✅Sends Pc Host Name Your Webhook
+- ✅Sends Pc Name To Your Webhook
+- ✅Sends Pc Username To Your Webhook
+- ✅Sends THere Pc Ip To Your Webhhook
+- ✅Sends Mac Adresss To  Your Webhook
+- ✅Sends There Pc Processer To Your Webhook
+- ✅Protection To The File
+- ✅ Ends Process Hacker And Etc
+- ✅ Tells You If There Is No Cookie Found In The Browsers It Grabs From
+  
+  
 # Tutorial
 https://youtu.be/nwm29LR77Aw
 
 # Credits
 Made By:
-Joseyt#1935
-TheSoap1#9870
+Joseyt#1935 And The TheSoap1#9870
