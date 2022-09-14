@@ -20,7 +20,6 @@
 - ✅Sends There Pc Processer To Your Webhook
 - ✅Protection To The File
 - ✅ Ends Process Hacker And Etc
-- ✅ Tells You If There Is No Cookie Found In The Browsers It Grabs From
   
   
 # Tutorial
