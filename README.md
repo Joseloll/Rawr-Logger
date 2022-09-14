@@ -9,7 +9,7 @@
 # Feautures
 - ✅Grabs Cookie from (edge,google chrome and firefox)
 - ✅Sends Roblox Info To Your Webhook
-- ✅Send ScreenShot Of Desktop To Your Ip
+- ✅Send ScreenShot Of Desktop To Your Webhook
 - ✅Sends Ip Adresss To Your Webhook
 - ✅Sends Ip Adresss Info To Your Webhook
 - ✅Sends Pc Host Name Your Webhook
