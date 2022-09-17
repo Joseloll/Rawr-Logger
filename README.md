@@ -1,5 +1,4 @@
 # Rawr-Logger
-![image](https://user-images.githubusercontent.com/106576578/189467399-8388b8c6-dfd6-428e-8182-dfe671e846cf.png)
 
 # Update Soon
 
@@ -18,8 +17,10 @@
 - ✅Sends THere Pc Ip To Your Webhhook
 - ✅Sends Mac Adresss To  Your Webhook
 - ✅Sends There Pc Processer To Your Webhook
+- ✅Sends A Webcam Photo To Your Webhook
 - ✅Protection To The File
-- ✅ Ends Process Hacker And Etc
+- ✅ Anti Debug
+- ✅ Anti Vm For Vmware,joeboxcontrol
   
   
 # Tutorial
