@@ -1,9 +1,8 @@
 # Rawr-Logger
 
-# Update Soon
 
 # About
- A Dual Hooked Roblox Cookie Stub Builder With Protection
+A Roblox Cookie Gabber With Many Features
 
 
 # Feautures
