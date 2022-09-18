@@ -5,7 +5,7 @@
 A Roblox Cookie Gabber With Many Features
 
 
-# Feautures
+# Features
 - ✅Grabs Cookie from (edge,google chrome and firefox)
 - ✅Sends Roblox Info To Your Webhook
 - ✅Send ScreenShot Of Desktop To Your Webhook
