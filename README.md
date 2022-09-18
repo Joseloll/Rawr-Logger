@@ -20,10 +20,11 @@ A Roblox Cookie Gabber With Many Features
 - ✅Protection To The File
 - ✅ Anti Debug
 - ✅ Anti Vm For Vmware,joeboxcontrol
+
+# To do
+-❌ Add Fake Guis To The Cookie Grabber
   
-  
-# Tutorial
-https://youtu.be/nwm29LR77Aw
+
 
 # Credits
 Made By:
