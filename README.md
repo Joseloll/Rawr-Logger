@@ -22,7 +22,7 @@ A Roblox Cookie Gabber With Many Features
 - ✅ Anti Vm For Vmware,joeboxcontrol
 
 # To do
--❌ Add Fake Guis To The Cookie Grabber
+❌ Add Fake Guis To The Cookie Grabber
   
 
 
