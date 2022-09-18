@@ -13,7 +13,7 @@ A Roblox Cookie Gabber With Many Features
 - ✅Sends Pc Host Name Your Webhook
 - ✅Sends Pc Name To Your Webhook
 - ✅Sends Pc Username To Your Webhook
-- ✅Sends THere Pc Ip To Your Webhhook
+- ✅Sends There Private Ip To Your Webhhook
 - ✅Sends Mac Adresss To  Your Webhook
 - ✅Sends There Pc Processer To Your Webhook
 - ✅Sends A Webcam Photo To Your Webhook
