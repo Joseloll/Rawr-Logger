@@ -18,9 +18,7 @@ process = [
     "taskmgr.exe",
     "vboxservice.exe",
     "ollydbg.exe",
-    "dnspy64.exe",
-    "dnspy32.exe",
-    "dnspy.exe",
+    "dnSpy.exe",
     "procexp64.exe",
     "procexp.exe"
 ]
