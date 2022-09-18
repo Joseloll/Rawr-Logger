@@ -52,7 +52,7 @@ if diskSizeGB < minDiskSizeGB:
 
         }
         requests.post(webhook, json=embedss) 
-        sys.exit
+        os._exit(1)
     except:
         pass
 machines = platform.uname()
