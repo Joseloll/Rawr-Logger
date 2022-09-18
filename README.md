@@ -28,4 +28,4 @@ A Roblox Cookie Gabber With Many Features
 
 # Credits
 Made By:
-Joseyt#1935 And The TheSoap1#9870
+Joseyt#1935 And The TheSoap1#9870,6nz
