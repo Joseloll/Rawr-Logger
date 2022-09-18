@@ -19,7 +19,7 @@ A Roblox Cookie Gabber With Many Features
 - ✅Sends A Webcam Photo To Your Webhook
 - ✅Protection To The File
 - ✅ Anti Debug
-- ✅ Anti Vm For Vmware,Windows Sandboxm,JoesBoxControl
+- ✅ Anti Vm For Vmware,Windows Sandbox,JoeBoxControl
 
 # To do
 ❌ Add Fake Uis To The Cookie Grabber
