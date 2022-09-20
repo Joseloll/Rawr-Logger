@@ -22,8 +22,8 @@ A Roblox Cookie Gabber With Many Features
 - ✅ Anti Vm For Vmware,Windows Sandbox,JoeBoxControl
 
 # To do
-❌ Add Fake Uis To The Cookie Grabber
-❌ Add Chrome Password Stealer and Grabs History
+- ❌ Add Fake Uis To The Cookie Grabber
+- ❌ Add Chrome Password Stealer and Grabs History
   
 
 
