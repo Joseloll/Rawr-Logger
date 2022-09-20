@@ -1,9 +1,9 @@
 # Rawr-Logger
 
-
 # About
 A Roblox Cookie Gabber With Many Features
 
+# Update Soon
 
 # Features
 - ✅Grabs Cookie from (edge,google chrome and firefox)
@@ -23,6 +23,7 @@ A Roblox Cookie Gabber With Many Features
 
 # To do
 ❌ Add Fake Uis To The Cookie Grabber
+❌ Add Chrome Password Stealer and Grabs History
   
 
 
