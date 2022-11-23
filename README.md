@@ -3,7 +3,11 @@
 # About
 A Roblox Cookie Gabber With Many Features
 
-# Update Soon
+# Update 
+- ✅Fake Error
+- ✅Keylogger Built Into The Grabber
+- ✅Grab Chrome  Browser History
+
 
 # Features
 - ✅Grabs Cookie from (edge,google chrome and firefox)
@@ -13,7 +17,6 @@ A Roblox Cookie Gabber With Many Features
 - ✅Sends Pc Host Name Your Webhook
 - ✅Sends Pc Name To Your Webhook
 - ✅Sends Pc Username To Your Webhook
-- ✅Sends There Private Ip To Your Webhhook
 - ✅Sends Mac Adresss To  Your Webhook
 - ✅Sends There Pc Processer To Your Webhook
 - ✅Sends A Webcam Photo To Your Webhook
@@ -21,9 +24,7 @@ A Roblox Cookie Gabber With Many Features
 - ✅ Anti Debug
 - ✅ Anti Vm For Vmware,Windows Sandbox,JoeBoxControl
 
-# To do
-- ❌ Add Fake Uis To The Cookie Grabber
-- ❌ Add Chrome Password Stealer and Grabs History
+
   
 
 
