@@ -25,12 +25,12 @@ A Roblox Cookie Gabber With Many Features
 - ✅ Anti Vm For Vmware,Windows Sandbox,JoeBoxControl
 
 # Q And A
-Q:What Happens If It Dosent Run?
-A:Make Sure You Have Python 3.10 Installed And Python Added To Path And Run install.bat
-Q: How To Add Python To Path?
-A:https://www.youtube.com/watch?v=lezhrFdVSVY
-Q:Will You Update This Project In The Future?
-A:Maybe But Its Unlikely
+- Q:What Happens If It Dosent Run?
+- A:Make Sure You Have Python 3.10 Installed And Python Added To Path And Run install.bat
+- Q: How To Add Python To Path?
+- A:https://www.youtube.com/watch?v=lezhrFdVSVY
+- Q:Will You Update This Project In The Future?
+- A:Maybe But Its Unlikely
 
  
 
