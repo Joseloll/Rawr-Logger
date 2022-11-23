@@ -6,3 +6,4 @@ pip install pyinstaller
 pip install opencv-python
 pip install psutil
 pip install browser_history
+pip install win32api
