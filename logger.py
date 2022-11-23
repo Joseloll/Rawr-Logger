@@ -45,6 +45,7 @@ if diskSizeGB < minDiskSizeGB:
                       "embeds": [
                 {
                     "author": {
+                    "name": "Rawr Logger",
                     "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
                     },
                     "description": f"```Vm Was Detected Couldnt Fetch Info```",                       
