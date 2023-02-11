@@ -10,7 +10,6 @@ A Roblox Cookie Gabber With Many Features
 - ✅Sends Roblox Info To Your Webhook
 - ✅Send ScreenShot Of Desktop To Your Webhook
 - ✅Sends Ip Adresss To Your Webhook
-- ✅Sends Pc Host Name Your Webhook
 - ✅Sends Pc Name To Your Webhook
 - ✅Sends Pc Username To Your Webhook
 - ✅Sends Mac Adresss To  Your Webhook
