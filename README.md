@@ -3,10 +3,6 @@
 # About
 A Roblox Cookie Gabber With Many Features
 
-# Update 
-- ✅Fake Error
-- ✅Keylogger Built Into The Grabber
-- ✅Grab Chrome  Browser History
 
 
 # Features
